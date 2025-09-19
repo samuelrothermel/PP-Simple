@@ -32,7 +32,7 @@ A clean, simplified PayPal checkout implementation featuring PayPal buttons and 
 
    ```bash
    npm run dev    # Development with nodemon
-   npm start      # Production mode
+   npm start      # When hosting via Render
    ```
 
 4. **Visit** `http://localhost:8888`
