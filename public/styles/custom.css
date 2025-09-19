@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eee;
+}
+
+.amount-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.amount-input {
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 150px;
+  text-align: center;
+}
+
+.payment-section {
+  margin-bottom: 30px;
+}
+
+.payment-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#paypal-button-container {
+  margin-bottom: 20px;
+}
+
+.card-section {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.card-field {
+  margin-bottom: 15px;
+}
+
+.card-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.card-field > div {
+  background: white;
+}
+
+.card-submit-button {
+  background: #0070f3;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.card-submit-button:hover {
+  background: #0051cc;
+}
+
+.info-section {
+  background: #e8f5e8;
+  border: 1px solid #c3e6c3;
+  border-radius: 4px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.info-section h4 {
+  margin: 0 0 10px 0;
+  color: #2d5a2d;
+}
+
+.success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #d4edda;
+  border: 1px solid #c3e6c3;
+  color: #155724;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.success-content button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.total-display {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* Mobile responsive */
+@media (max-width: 650px) {
+  .container {
+    max-width: 100%;
+    margin: 0 10px;
+    padding: 20px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}

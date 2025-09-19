@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple PayPal Checkout</title>
+    <link rel="stylesheet" type="text/css" href="/styles/custom.css">
+</head>
+<body class="checkout-page-body">
+    <div class="container checkout-page-container">
+        <div class="header">
+            <h1>Simple PayPal Checkout Demo</h1>
+            <p>Test PayPal, Venmo and Card payments with this simplified checkout</p>
+        </div>
+
+        <div class="amount-section">
+            <h3>Payment Amount</h3>
+            <label for="amount-input">Enter amount to pay (USD):</label>
+            <input type="number" id="amount-input" class="amount-input" value="10.00" min="1" max="10000" step="0.01">
+            <p>Total: $<span id="total-amount" class="total-display">10.00</span></p>
+        </div>
+
+        <div class="payment-section">
+            <h3>Quick Checkout with PayPal</h3>
+            <div id="paypal-button-container"></div>
+        </div>
+
+        <div class="payment-section">
+            <div id="paylater-message-container" style="margin-top: 15px;"></div>
+        </div>
+
+        <div class="payment-section" id="card-section">
+            <h3>Or Pay with Card</h3>
+            <div class="card-section">
+                <div class="card-field">
+                    <label for="card-number-field">Card Number</label>
+                    <div id="card-number-field"></div>
+                </div>
+                <div class="card-field">
+                    <label for="card-expiry-field">Expiry Date</label>
+                    <div id="card-expiry-field"></div>
+                </div>
+                <div class="card-field">
+                    <label for="card-cvv-field">CVV</label>
+                    <div id="card-cvv-field"></div>
+                </div>
+                <button id="card-submit-button" class="card-submit-button">Pay with Card</button>
+            </div>
+        </div>
+
+        <div id="order-info" class="info-section" style="display: none;">
+            <!-- Order information will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        const clientId = '<%= clientId %>';
+    </script>
+    <script src="/checkout.js"></script>
+</body>
+</html>
